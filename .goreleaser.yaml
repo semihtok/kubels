@@ -1,0 +1,25 @@
+before:
+  hooks:
+    - go mod download
+builds:
+  - id: kubels
+    main: ./cmd/kubels
+    binary: kubels
+    env:
+      - CGO_ENABLED=0
+    goos:
+      - linux
+      - darwin
+      - windows
+    goarch:
+      - amd64
+      - arm
+      - ppc64le
+      - s390x
+    goarm: [6, 7]
+checksum:
+  name_template: "checksums.txt"
+  algorithm: sha256
+release:
+  extra_files:
+    - glob: ./kubels
