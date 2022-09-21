@@ -6,5 +6,5 @@ import (
 
 func main() {
 	args := os.Args[1:]
-	Get(args)
+	Run(args)
 }
