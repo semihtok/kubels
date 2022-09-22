@@ -22,7 +22,7 @@ brews:
   - # GitHub/GitLab repository to push the formula to
     tap:
       owner: Semih Tok
-      name: cli
+      name: kubels
 
     name: kubels
     # Template for the url which is determined by the given Token (github or gitlab)
@@ -37,15 +37,13 @@ brews:
       name: Semih Tok
       email: ibrahim@semihtok.com
 
-    folder: Formula
-
     # Caveats for the user of your binary.
     # Default is empty.
     caveats: ""
 
     # Your app's description.
     # Default is empty.
-    description: ""
+    description: "kubels (kube ls) is a Kubernetes tool that allows you to list Kubernetes resources with a simple command(s)."
 
     # SPDX identifier of your app's license.
     # Default is empty.
