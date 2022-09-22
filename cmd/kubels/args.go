@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func Get(args []string) {
+func Run(args []string) {
 
 	firstArg := "p"
 
