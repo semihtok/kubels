@@ -21,20 +21,16 @@ builds:
 brews:
   - # GitHub/GitLab repository to push the formula to
     tap:
-      owner: Semih Tok
+      owner: semihtok
       name: kubels
 
     name: kubels
-    # Template for the url which is determined by the given Token (github or gitlab)
-    # Default for github is "https://github.com/<repo_owner>/<repo_name>/releases/download/{{ .Tag }}/{{ .ArtifactName }}"
-    url_template: "https://github.com/semihtok/kubels/releases/download/{{ .Tag }}/{{ .ArtifactName }}"
-
     homepage: https://github.com/semihtok/kubels
 
     # Git author used to commit to the repository.
     # Defaults are shown.
     commit_author:
-      name: Semih Tok
+      name: semihtok
       email: ibrahim@semihtok.com
 
     # Caveats for the user of your binary.
