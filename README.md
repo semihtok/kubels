@@ -18,3 +18,13 @@ kubels (kube ls) is a Kubernetes tool that allows you to list Kubernetes resourc
 | kubels -s (or svc) -n {namespace} | list of services in specified namespace            |
 | kubels -sec                       | list of secrets in current namespace               |
 | kubels -sec -n {namespace}        | list of secrets in specified namespace             |
+
+## Installation
+
+### Homebrew
+
+```bash
+brew tap semihtok/kubels
+
+brew install kubels
+```
