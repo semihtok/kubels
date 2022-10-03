@@ -37,3 +37,21 @@ brew tap semihtok/kubels
 
 brew install kubels
 ```
+
+### Manual
+
+```bash
+git clone
+cd kubels
+go build -o kubels
+mv kubels /usr/local/bin
+```
+
+## License
+Apache License 2.0, see [LICENSE](LICENSE).
+
+## Contributing
+Contributions are welcome! Feel free to open an issue or submit a PR.
+
+## Author
+Semih Tok
