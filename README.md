@@ -5,10 +5,10 @@ kubels (kube ls) is a Kubernetes tool that allows you to list Kubernetes resourc
 ## Features
 
 #### Listing resources with a simple command :
-<img src="images/kubels-pods.png" alt="Pod with metrics " width="700"/>
+<img src="images/kubels.png" alt="Pod with metrics " width="700"/>
 
 #### Listing pods + cpu and memory usages with a single command :
-<img src="images/kubels-with-metrics.png" alt="Pod with metrics " width="700"/>
+<img src="images/kubels-pods-with-metrics.png" alt="Pod with metrics " width="700"/>
 
 ## Usage
 
