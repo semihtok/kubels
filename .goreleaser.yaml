@@ -43,7 +43,7 @@ brews:
 
     # SPDX identifier of your app's license.
     # Default is empty.
-    license: "MIT"
+    license: "Apache 2.0"
 
     # Packages your package depends on.
     dependencies:
