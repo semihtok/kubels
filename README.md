@@ -16,9 +16,9 @@ kubels (kube ls) is a Kubernetes tool that allows you to list Kubernetes resourc
 |-----------------------------------|----------------------------------------------------|
 | kubels or kubels -p               | list of pods in current namespace                  |     
 | kubels -p -n {namespace}          | list of pods in specified namespace                |
-| kubels -p w                       | list of pods in current namespace with watch       |
-| kubels -p o                       | list of pods in current namespace with wide output |
-| kubels -p m                       | list of pods in current namespace with metrics     |
+| kubels -p -w                      | list of pods in current namespace with watch       |
+| kubels -p -o                      | list of pods in current namespace with wide output |
+| kubels -p -m                      | list of pods in current namespace with metrics     |
 | kubels -n                         | list of namespaces                                 |
 | kubels -d                         | list of deployments in current namespace           |
 | kubels -d -n {namespace}          | list of deployments in specified namespace         |
