@@ -6,7 +6,7 @@ class Kubels < Formula
   desc "kubels (kube ls) is a Kubernetes tool that allows you to list Kubernetes resources with a simple command(s)."
   homepage "https://github.com/semihtok/kubels"
   version "0.2.0"
-  license "MIT"
+  license "Apache 2.0"
 
   depends_on "git"
   depends_on "go"
