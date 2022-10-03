@@ -89,7 +89,7 @@ func getPods(args []string) error {
 				pod.Name,
 				string(pod.Status.Phase),
 				strconv.Itoa(int(pod.Status.ContainerStatuses[0].RestartCount)),
-				strconv.Itoa(int(cpu)),
+				strconv.Itoa(int(cpu)) + "m",
 				strconv.Itoa(int(memory)) + "Mi",
 			})
 		} else {
