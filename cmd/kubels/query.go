@@ -82,7 +82,7 @@ func getPods(args []string) error {
 
 	for i, pod := range pods.Items {
 		if metrics != nil && len(metrics.Items) > 0 {
-			cpu := metrics.Items[i].Containers[0].Usage.Cpu().Value()
+			cpu := metrics.Items[i].Containers[0].Usage.Cpu().MilliValue()
 			memory := metrics.Items[i].Containers[0].Usage.Memory().Value() / 1024 / 1024
 
 			table.Append([]string{
