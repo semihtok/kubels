@@ -13,7 +13,7 @@ class Kubels < Formula
 
   on_macos do
     url "https://github.com/semihtok/kubels/releases/download/v0.2.0/kubels_0.2.0_darwin_amd64.tar.gz"
-    sha256 "3111a98731c11a354ff47149e3d2b3e2c6fa6754c5eb1a3d78d07ecc3d5f373c"
+    sha256 "858cebc3863fde9333b341df41fc2705584ba73fe1179ff41a5b157aace04d0b"
 
     def install
       bin.install "kubels"
@@ -33,7 +33,7 @@ class Kubels < Formula
   on_linux do
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
       url "https://github.com/semihtok/kubels/releases/download/v0.2.0/kubels_0.2.0_linux_armv6.tar.gz"
-      sha256 "b906d5b5134186984949588163004c7cdb907f0cde76a5c75e84c19c502aa6d9"
+      sha256 "9a8037f8151e94bf78910e6454d2be4cee209fa03cac2f9624c4529b30cffb91"
 
       def install
         bin.install "kubels"
@@ -41,7 +41,7 @@ class Kubels < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/semihtok/kubels/releases/download/v0.2.0/kubels_0.2.0_linux_amd64.tar.gz"
-      sha256 "bff253a517e240c526499c0416bdca3b66ae734d1628713d451ca8c4aca3365b"
+      sha256 "c0b6c13450c2b166845668ffd6d8352e8b1c9e58c01ca6daf69b438d7fb376ff"
 
       def install
         bin.install "kubels"
