@@ -36,6 +36,7 @@ func getPods(args []string) error {
 	var err error
 	var metrics *v1beta1.PodMetricsList
 	var namespace string
+	var hasWide bool
 
 	fmt.Printf("\n")
 	_, _ = c.Printf("Listing Pods:")
@@ -65,17 +66,8 @@ func getPods(args []string) error {
 		table.SetHeader([]string{"Name", "Status", "Restarts", "CPU", "Memory"})
 
 	} else if slices.Contains(args[:], "-o") {
-		table.SetHeader([]string{"Name", "Status", "Restarts", "CPU", "Memory", "Node", "IP", "Node IP"})
-		for _, pod := range pods.Items {
-			table.Append([]string{
-				pod.Name,
-				string(pod.Status.Phase),
-				strconv.Itoa(int(pod.Status.ContainerStatuses[0].RestartCount)),
-				pod.Status.PodIP,
-				pod.Spec.NodeName,
-				pod.Status.HostIP,
-			})
-		}
+		hasWide = true
+		table.SetHeader([]string{"Name", "Status", "Restarts", "Node", "IP", "Node IP"})
 	} else {
 		table.SetHeader([]string{"Name", "Status", "Restarts"})
 	}
@@ -91,6 +83,15 @@ func getPods(args []string) error {
 				strconv.Itoa(int(pod.Status.ContainerStatuses[0].RestartCount)),
 				strconv.Itoa(int(cpu)) + "m",
 				strconv.Itoa(int(memory)) + "Mi",
+			})
+		} else if hasWide {
+			table.Append([]string{
+				pod.Name,
+				string(pod.Status.Phase),
+				strconv.Itoa(int(pod.Status.ContainerStatuses[0].RestartCount)),
+				pod.Spec.NodeName,
+				pod.Status.PodIP,
+				pod.Status.HostIP,
 			})
 		} else {
 			table.Append([]string{
