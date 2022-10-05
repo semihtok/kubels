@@ -1,5 +1,5 @@
 
-&nbsp;<img src="images/kubels_desc.png" width="700"/>
+&nbsp;<img src="images/kubels_banner.png" width="700"/>
 
 ## Features
 
