@@ -29,7 +29,7 @@
 
 ## Installation
 
-### Homebrew
+### Homebrew (macOS and Linux)
 
 ```bash
 brew tap semihtok/kubels
