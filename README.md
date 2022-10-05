@@ -9,11 +9,6 @@
 #### Listing pods + cpu and memory usages with a single command :
 <img src="images/kubels-pods-with-metrics.png" alt="pods with metrics" width="700"/>
 
-### Demo :
-<a href="https://asciinema.org/a/Te7Y0qSGP6RZFAYdG2y5CwOGW">
-  <img alt="demo" src="https://asciinema.org/a/Te7Y0qSGP6RZFAYdG2y5CwOGW.svg" height="870">
-</a>
-
 ## Usage
 
 | Commands                          | Descriptions                                       |
