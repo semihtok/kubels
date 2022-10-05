@@ -1,6 +1,6 @@
 [![Go Report Card](https://goreportcard.com/badge/github.com/semihtok/kubels)](https://goreportcard.com/report/github.com/semihtok/kubels)
 
-&nbsp;<img src="images/kubels-banner.png" width="700"/>
+<img alt="kubels banner" src="images/kubels-banner.png" width="700"/>
 
 ## Features
 
