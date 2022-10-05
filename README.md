@@ -1,4 +1,6 @@
 [![Go Report Card](https://goreportcard.com/badge/github.com/semihtok/kubels)](https://goreportcard.com/report/github.com/semihtok/kubels)
+[![GoDoc](https://godoc.org/github.com/semihtok/kubels?status.svg)](https://godoc.org/github.com/semihtok/kubels)
+[![License](https://img.shields.io/github/license/saltstack/salt)](https://raw.githubusercontent.com/semihtok/kubels/master/LICENSE)
 
 <img alt="kubels banner" src="images/kubels-banner.png" width="700"/>
 
