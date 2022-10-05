@@ -37,7 +37,12 @@ brew tap semihtok/kubels
 brew install kubels
 ```
 
-### Manual
+
+### Chocolatey (Windows)
+Coming soon
+
+
+### Manual Installation 
 
 ```bash
 git clone
@@ -45,6 +50,7 @@ cd kubels
 go build -o kubels
 mv kubels /usr/local/bin
 ```
+
 
 ## License
 Apache License 2.0, see [LICENSE](LICENSE).
