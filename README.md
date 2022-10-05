@@ -5,7 +5,7 @@
 
 
 #### Listing resources with a simple command :
-<img src="images/kubels.png" alt="Pod with metrics " width="700"/>
+<img src="images/kubels.png" alt="Pod with metrics " width="600"/>
 
 #### Listing pods + cpu and memory usages with a single command :
 <img src="images/kubels-pods-with-metrics.png" alt="Pod with metrics " width="700"/>
